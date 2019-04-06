@@ -1,0 +1,218 @@
+body{
+  
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1000px;
+    background-image: url(img/background.jpg);
+    
+   
+
+}
+/* img{
+    width: 20%;
+    height: 20%;
+    padding: 1%;
+    margin: 1%;
+    top:20%;
+    z-index: 2;
+ }
+ img:hover{
+    -webkit-animation: jump 1.5s ease 0s infinite normal ;
+    animation: jump 1.5s ease 0s infinite normal ;
+ }
+ @keyframes jump{
+    0%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        transform: translateX(0);
+      }
+      20%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        transform: translateX(0);
+      }
+      40%{
+        -webkit-transform: translateY(-30px);
+        
+        transform: translateX(-30px);
+        
+
+      }
+      50%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        transform: translateX(0);
+      }
+      60%{
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+        transform: translateX(-15px);
+        
+      }
+      80%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        transform: translateX(0);
+      }
+      100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        transform: translateX(0);
+      }
+    }
+     */
+   
+ 
+ .header{
+     margin-bottom: 1%;
+     display: flex;
+     flex-direction: row;
+     height:5%;
+     justify-content: flex-end;
+     overflow: hidden;
+ }
+ .header nav{
+     list-style: none;
+     width: 100%;
+     height: 100%;  
+    
+     display:inline-flex;
+     justify-content: flex-end;
+ }
+ .header nav>li{
+     margin-left: 2%;
+     border: 1px solid red;
+     width: 100%;
+     height: 70%;
+     margin: 1px;
+     text-align: center;
+     padding-top: 5px;
+     border-radius: 30px;
+    
+    }
+    .header nav li a{
+        text-decoration: none;
+        color: black;
+        
+    }
+    .dropdown{
+        display: none;
+        list-style: none;
+        position: absolute;
+        /* background-color: rgb(59, 6, 6); */
+        margin: 0;
+        padding:1%;
+        width: 17.5%;
+        padding-top: 0;
+    }
+.dropdown li{
+    margin: 1%;
+    border: 1px solid rgb(243, 11, 11);
+    transition: 1.5s;
+}
+ 
+ nav>li:hover{
+     /* border-block-color: gold;
+     border-block-end-width: 3px; */
+     background-color: rgb(241, 25, 25);
+     box-shadow: 0px 0px 5px 5px white;
+     
+
+ }
+   .dropdown:hover{
+    display: block;
+ }
+ .dropdown li:hover{
+     display:block;
+     border-block-color: gold;
+     border-block-end-width: 3px;
+     background-color: rgb(235, 74, 74);
+ }
+ nav li:hover .dropdown{
+     display: block;
+ }
+
+ .content{
+    display: block;
+    margin-top: 1%;
+    height: 60%;
+}
+.content>div{
+    width:95%;
+    height: 50%; 
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: right;
+   align-items: center;
+  }
+  .blur{
+    width:98%;
+    height: 90%;
+    border: 1px solid black;
+    background:white;
+    opacity: .3;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   line-height: 30px;
+   align-items: center;
+  }
+.content .about p{
+   padding: 2%;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+ }
+
+img{
+  width:100%;
+  height:100%;
+}
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+ .flip-card {
+   align-self: center;
+  background-color: transparent;
+  width: 22%;
+  height: 30%;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back sidle */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(66, 41, 179);
+  color: white;
+  transform: rotateY(180deg);
+} 
+
